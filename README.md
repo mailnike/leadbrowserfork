@@ -19,8 +19,8 @@ Additionally, LeadBrowser can quickly and easily extract data from LinkedIn prof
 
 ## Use-cases
 
-* 📁 **Search small companies**
-* 📁 **Active companies information**
-* 📁 **Analyze market**
+* 📁 **Search for small businesses**
+* 📁 **Information about active companies**
+* 📁 **Analyze the market**
 
 ![alt text](https://github.com/LeadBrowser/app/blob/main/images/fnc.png?raw=true)
