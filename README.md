@@ -3,9 +3,10 @@ Unique AI tool to extract contact details from all over the Internet, from all o
 
 ![alt text](https://github.com/LeadBrowser/app/blob/main/images/landing.png?raw=true)
 
-LeadBrowser was created to extract the best quality data with the confidence that the data is up-to-date. With ease, LeadBrowser is able to find better data than competing tools that use off-the-shelf databases.
+LeadBrowser is a tool designed to help users find high-quality, up-to-date data.
+It uses a browser-like interface to search for information, allowing users to easily find the data they need. With its ability to search for and extract data from a variety of sources, including LinkedIn, LeadBrowser is able to find better data than many other tools that rely on off-the-shelf databases. 
 
-The tool works like a browser. After entering the appropriate phrase, the data is searched in the browser and based on the companies found, the data is completed. Also we catch employees from Linkedin and without any plugin! You get ready data, after a few minutes (depends on the amount of data).
+Additionally, LeadBrowser can quickly and easily extract data from LinkedIn profiles without the need for any plugins, providing users with ready-to-use data in just a few minutes. Overall, LeadBrowser is a versatile and efficient tool for finding and extracting high-quality data.
 
 ## Features 🤩
 
