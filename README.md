@@ -21,3 +21,5 @@ The tool works like a browser. After entering the appropriate phrase, the data i
 * 📁 **Search small companies**
 * 📁 **Active companies information**
 * 📁 **Analyze market**
+
+![alt text](https://github.com/LeadBrowser/app/blob/main/images/fnc.png?raw=true)
