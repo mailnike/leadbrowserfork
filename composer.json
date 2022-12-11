@@ -1,0 +1,115 @@
+{
+    "name": "explorator/laravel-crm",
+    "type": "project",
+    "description": "Explorator CRM",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "artesaos/seotools": "^0.22.0",
+        "astrotomic/laravel-translatable": "^11.10",
+        "barryvdh/laravel-dompdf": "^0.9.0",
+        "cviebrock/eloquent-sluggable": "^8.0",
+        "daveearley/daves-email-validation-tool": "^1.2",
+        "devpark/laravel-przelewy24": "^3.0",
+        "diglactic/laravel-breadcrumbs": "^7.0",
+        "doctrine/dbal": "^3.1",
+        "egulias/email-validator": "^2.1.10",
+        "emotality/tawk-laravel": "^2.1",
+        "fideloper/proxy": "^4.4",
+        "flynsarmy/db-blade-compiler": "^9.0",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "jbroadway/urlify": "^1.2",
+        "konekt/concord": "^1.10",
+        "laravel/cashier": "^13.11",
+        "laravel/framework": "^8.12",
+        "laravel/helpers": "^1.5",
+        "laravel/sanctum": "^2.1",
+        "laravel/tinker": "^2.5",
+        "laravel/ui": "^3.2",
+        "maatwebsite/excel": "^3.1",
+        "masterminds/html5": "^2.7",
+        "nnjeim/world": "^1.1",
+        "php-ds/php-ds": "^1.4.0",
+        "prettus/l5-repository": "^2.7",
+        "pusher/pusher-php-server": "^7.0",
+        "robertogallea/laravel-python": "^0.1.1",
+        "s-ichikawa/laravel-sendgrid-driver": "^3.0",
+        "sentry/sentry-laravel": "^2.12",
+        "spatie/browsershot": "^3.54",
+        "spatie/crawler": "^7.1",
+        "spatie/laravel-stripe-webhooks": "^3.2",
+        "symfony/dom-crawler": "^6.1",
+        "webklex/php-imap": "^2.2.5"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.6",
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/",
+            "Explorator\\API\\": "packages/Explorator/API/src",
+            "Explorator\\Activity\\": "packages/Explorator/Activity/src",
+            "Explorator\\Admin\\": "packages/Explorator/Admin/src",
+            "Explorator\\Attribute\\": "packages/Explorator/Attribute/src",
+            "Explorator\\Core\\": "packages/Explorator/Core/src",
+            "Explorator\\Mailbox\\": "packages/Explorator/Mailbox/src",
+            "Explorator\\EmailTemplate\\": "packages/Explorator/EmailTemplate/src",
+            "Explorator\\Lead\\": "packages/Explorator/Lead/src",
+            "Explorator\\Product\\": "packages/Explorator/Product/src",
+            "Explorator\\Quote\\": "packages/Explorator/Quote/src",
+            "Explorator\\Tag\\": "packages/Explorator/Tag/src",
+            "Explorator\\UI\\": "packages/Explorator/UI/src",
+            "Explorator\\User\\": "packages/Explorator/User/src",
+            "Explorator\\Workflow\\": "packages/Explorator/Workflow/src",
+            "Explorator\\Search\\": "packages/Explorator/Search/src",
+            "Explorator\\Organization\\": "packages/Explorator/Organization/src",
+            "Explorator\\Extractor\\": "packages/Explorator/Extractor/src",
+            "Explorator\\Result\\": "packages/Explorator/Result/src",
+            "Explorator\\Payment\\": "packages/Explorator/Payment/src",
+            "Explorator\\Sales\\": "packages/Explorator/Sales/src",
+            "Explorator\\CMS\\": "packages/Explorator/CMS/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}
